@@ -1,0 +1,5 @@
+
+> pokedex@1.0.0 dev
+> npx tsc && node dist/main.js
+
+src/command.ts(2,9): error TS2305: Module '"./command_help.js"' has no exported member 'commandHelp'.
