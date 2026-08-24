@@ -15,7 +15,7 @@ export function startREPL(state: State) {
             state.rl.prompt()
         } else if (command){
             try {
-                await command.callback(state);
+                await command.callback(state, ...word.slice(1));
             } catch (error){
                 console.log("Error executing command: " + error);
             } finally {
